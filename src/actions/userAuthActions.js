@@ -7,8 +7,7 @@ export const login = (userData, cb) => (dispatch) => {
   dispatch({ type: CONSTANTS.USER_APICALL_START });
 
   Axios.post(
-    `${process.env.REACT_APP_API_URL}/auth/login` ||
-      'https://api.so-me.net/api/auth/login',
+    `${process.env.REACT_APP_API_URL}/auth/login`,
     userData
   )
     .then((response) => {
@@ -30,8 +29,7 @@ export const login = (userData, cb) => (dispatch) => {
 export const registerUser = (userData, cb) => (dispatch) => {
   dispatch({ type: CONSTANTS.USER_APICALL_START });
   Axios.post(
-    `${process.env.REACT_APP_API_URL}/auth/register` ||
-      'https://api.so-me.net/api/auth/register',
+    `${process.env.REACT_APP_API_URL}/auth/register`,
     userData
   )
     .then(async (response) => {

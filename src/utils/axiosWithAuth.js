@@ -1,7 +1,7 @@
 import axios from 'axios';
 require('dotenv').config();
 
-const url = process.env.REACT_APP_API_URL || 'https://api.so-me.net/api/';
+const url = process.env.REACT_APP_API_URL;
 
 export const axiosWithAuth = () => {
   return axios.create({
