@@ -44,7 +44,6 @@ const CardModal = (props) => {
   const { content, setcontent } = props;
 
   const classes = modalStyles();
-  const SN = localStorage.getItem('SNAME');
   const [modalStyle] = useState(editModalLocation);
   const [handle, setHandle] = useState(1);
   const [postnow, setPostNow] = useState(false);
